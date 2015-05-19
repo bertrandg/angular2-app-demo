@@ -1,35 +1,43 @@
 {
-  "name": "ng2-play",
+  "name": "angular2-webpack-starter",
   "version": "0.0.0",
+  "description": "An Angular 2 Webpack Starter kit featuring Angular 2, Router, TypeScript, and Webpack by AngularClass",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp play"
+    "build": "webpack -d",
+    "watch": "webpack -d --watch",
+    "server": "webpack-dev-server -d --inline --colors --display-error-details --display-cached ",
+    "start": "npm install && npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pkozlowski-opensource/ng2-play.git"
+    "url": "https://github.com/gdi2290/angular2-webpack-seed.git"
   },
+  "author": "gdi2290 <github@gdi2290.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pkozlowski-opensource/ng2-play/issues"
+    "url": "https://github.com/gdi2290/angular2-webpack-seed/issues"
   },
-  "homepage": "https://github.com/pkozlowski-opensource/ng2-play",
-  "devDependencies": {
-    "connect": "^3.3.4",
-    "del": "~1.1.1",
-    "gulp": "~3.8.10",
-    "gulp-plumber": "^1.0.0",
-    "gulp-rename": "~1.2.0",
-    "gulp-size": "^1.2.1",
-    "gulp-traceur": "0.17.*",
-    "open": "0.0.5",
-    "serve-static": "~1.8.1",
-    "systemjs-builder": "^0.10.3",
-    "through2": "~0.6.3"
-  },
+  "homepage": "https://github.com/gdi2290/angular2-webpack-seed",
   "dependencies": {
-    "angular2": "2.0.0-alpha.22",
-    "es6-module-loader": "0.16.5",
-    "lodash": "^3.8.0",
-    "systemjs": "0.16.7"
+    "angular2": "2.0.0-alpha.23",
+    "reflect-metadata": "^0.1.0",
+    "rtts_assert": "2.0.0-alpha.23",
+    "zone.js": "^0.5.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.12.1",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.6.0",
+    "file-loader": "^0.8.1",
+    "imports-loader": "^0.6.3",
+    "json-loader": "^0.5.1",
+    "style-loader": "^0.12.2",
+    "typescript": "^1.5.0-beta",
+    "typescript-simple-loader": "^0.1.2",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
   }
 }
