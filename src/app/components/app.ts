@@ -23,11 +23,19 @@ class XLarge {
   template: `
   <h1>Hello {{ name }}</h1>
   <span x-large>Extra Large Font Directive</span>
+  <hr>
+  <p (click)="showMeTheWay(ref)">XX{{ ref.value }}XX</p>
+  <input type="text" #ref (keyup)>
   `
 })
 export class App {
   name: string;
   constructor() {
     this.name = 'Angular 2';
+  }
+
+  showMeTheWay(ref) {
+    console.log('ref = ', ref);
+    console.log('ref.value = ', ref.value);
   }
 }
