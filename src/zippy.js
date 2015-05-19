@@ -13,7 +13,7 @@ import { ComponentAnnotation as Component, ViewAnnotation as View } from 'angula
 export class Zippy {
 
   constructor() {
-    this.visible = true;
+    this.visible = false;
   }
 
   toggle() {
